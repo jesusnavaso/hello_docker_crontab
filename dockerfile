@@ -7,5 +7,5 @@ RUN apt install -y git
 RUN apt install -y cron
 RUN cd /hello_docker_crontab && crontab crontab
 
-CMD ["cron"]
+ENTRYPOINT ["cron"]
 
