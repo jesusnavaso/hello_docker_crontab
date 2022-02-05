@@ -1,2 +1,1 @@
-* * * * * python /mnt/c/dev/hello_docker_crontab/hello_docker.py
-0-59 * * * * echo "hi" >> /root/cron.log
+* * * * *  /usr/local/bin/python /hello_docker_crontab/hello_docker.py

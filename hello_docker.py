@@ -12,7 +12,7 @@ if __name__ == '__main__':
     LOG_FOLDER.mkdir(exist_ok=True)
     LOG_FILE_PATH = Path(LOG_FOLDER, "hello_docker.log")
 
-    logger = logging.getLogger("hello_docker_class")
+    logger = logging.getLogger(__name__)
     logger.setLevel(logging.DEBUG)
     file_handler = logging.FileHandler(LOG_FILE_PATH)
     log_formatter = logging.Formatter(f"%(asctime)s\t%(levelname)s - {__file__} : %(message)s")
