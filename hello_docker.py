@@ -7,7 +7,8 @@ def log_something():
 
 
 if __name__ == '__main__':
-    LOG_FOLDER = Path("./logs")
+    REPO_ROOT = Path(__file__).parents[0]
+    LOG_FOLDER = REPO_ROOT / "logs"
     LOG_FOLDER.mkdir(exist_ok=True)
     LOG_FILE_PATH = Path(LOG_FOLDER, "hello_docker.log")
 
