@@ -7,4 +7,4 @@ RUN apt install -y git
 RUN apt install -y cron
 RUN cd /hello_docker_crontab && crontab crontab
 
-CMD ["/bin/bash", "-c", "cron"]
+CMD ["cron", "-f"]
